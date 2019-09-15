@@ -3,10 +3,6 @@ project(MatrixWoR)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_CXX_FLAGS_COVERAGE "${CMAKE_CXX_FLAGS_DEBUG} -g -O0 --coverage")
-set(CMAKE_EXE_LINKER_FLAGS_COVERAGE "${CMAKE_EXE_LINKER_FLAGS_DEBUG} -g -O0 --coverage")
-set(CMAKE_SHARED_LINKER_FLAGS_COVERAGE "${CMAKE_SHARED_LINKER_FLAGS_DEBUG} -g -O0 --coverage")
-
 find_package(Boost REQUIRED COMPONENTS system filesystem unit_test_framework)
 link_directories(${Boost_LIBRARY_DIR})
 
